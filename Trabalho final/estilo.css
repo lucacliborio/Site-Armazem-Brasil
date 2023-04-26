@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    background-color: #fff;
+    font-family: condensed;
+}
+
+.logotipo{
+    padding: 0px 70px;
+}
+
+header{
+    box-sizing: border-box;
+    height: 76px;
+    width: 100%;
+    padding: 1rem;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    background-color: #fff;
+}
+
+#conteudo1{
+    width: 90%;
+    height: 700px;
+    margin-left: 5% ;
+    margin-top: 4%;
+    text-align: center;
+    color: #fff;
+    font-family:comfortaa;
+    font-size: large;
+    padding: 17rem;
+    background-image: url(Imagens/IMG_0712.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 1300px;
+}
+
+.botao{
+   background-color: #fff;
+}
+
+
+footer{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.logosocial{
+    width: 25px;
+}
+
+/*links*/ 
+
+.link:link{
+    text-decoration: none;
+    color: black;
+}
+
+.link:visited{
+    text-decoration: none;
+    color: black;
+}
+
+.link:hover{
+    text-decoration: underline;
+    color: brown;
+}
+
+.link:active{
+    color: brown;
+}
