@@ -1,45 +1,50 @@
 body{
-    margin: 0;
-    background-color: #fff;
+    margin: 0px;
+    background-color: #fffacd;
     font-family: condensed;
 }
 
-.logotipo{
-    padding: 0px 70px;
+.logo{
+   padding-left: 4.375em;
+   
 }
 
-header{
+.cabecalho{
     box-sizing: border-box;
-    height: 76px;
-    width: 100%;
-    padding: 1rem;
-    justify-content: space-between;
+    height: 150px;
     display: flex;
     align-items: center;
-    position: fixed;
-    background-color: #fff;
+    padding: 1rem;
+    justify-content: space-between; 
+    background-color: #F0E68C;
+    
 }
 
-#conteudo1{
+.menu{
+    margin: 0px;
+    padding-right: 4.375em;
+    display: flex;
+    list-style: none;
+    gap: .5rem
+}
+
+.menu li a{
+    color: #5D2E10;
+    text-decoration: none;
+    
+    display: block;
+    padding: .5rem;
+}
+
+#carouselExampleFade{
     width: 90%;
-    height: 700px;
-    margin-left: 5% ;
-    margin-top: 4%;
-    text-align: center;
-    color: #fff;
-    font-family:comfortaa;
-    font-size: large;
-    padding: 17rem;
-    background-image: url(Imagens/IMG_0712.jpeg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 1300px;
+    margin-top: 2%;
+    margin-left: 5%;
 }
 
-.botao{
-   background-color: #fff;
+.logosocial{
+    width: 25px;
 }
-
 
 footer{
     text-align: center;
@@ -47,27 +52,88 @@ footer{
     margin-bottom: 25px;
 }
 
-.logosocial{
-    width: 25px;
+
+.menu li a.item-menu-ativo{
+    color: #5D2E10;
 }
 
-/*links*/ 
-
-.link:link{
-    text-decoration: none;
-    color: black;
+.menu li a:hover{
+    color: #5D2E10;
 }
 
-.link:visited{
-    text-decoration: none;
-    color: black;
+#btn-menu{
+    display: none;
 }
 
-.link:hover{
-    text-decoration: underline;
-    color: brown;
-}
+/*Formatação para telas menores*/
+@media (max-width: 600px){
+    .menu{
+        display: block;
+        position: absolute;
+        visibility: hidden;
+        width: 100%;
+        top: 9.375em;
+        right: 0px;
+        background-color: #F0E68C;
+        height: 0px;
+        z-index: 1000;
+        transition: .6s;
+        overflow-y: hidden;
+    }
 
-.link:active{
-    color: brown;
+    #cx-menu.active .menu{
+        visibility: visible;
+        height: calc(100vh - 70px);
+        overflow-y: auto;
+    }
+
+    .menu li a{
+        padding: 1rem 0; 
+        margin: 0 1rem;
+        border-bottom: 1px solid #5D2E10;
+    }
+
+    #btn-menu{
+        display: flex;
+        padding: .5rem 1rem;
+        font-family: Calibri, Arial, Helvetica, sans-serif;
+        font-size: 1.5rem;
+        border: none;
+        background-color: #F0E68C;
+        cursor: pointer;
+        gap: .5rem; 
+        outline: 0;
+        align-items: center;
+    }
+
+    .hamburger{
+        display: block;
+        border-top: 2px solid;
+        width: 20px;
+        color: #5D2E10; 
+    }
+
+    .hamburger::after, .hamburger::before{
+        display: block;
+        content: '';
+        width: 20px;
+        height: 2px;
+        margin-top: 5px;
+        background-color: currentColor;
+        transition: .3s;
+        position: relative;
+    }
+
+    #cx-menu.active .hamburger{
+        border-top-color: transparent;
+    }
+
+    #cx-menu.active .hamburger::before{
+        transform: rotate(135deg);
+    }
+
+    #cx-menu.active .hamburger::after{
+        transform: rotate(-135deg); 
+        top: -7px;  
+    }
 }
