@@ -1,3 +1,4 @@
+/*Formatação nav e corpo*/
 body{
     margin: 0px;
     background-color: #fffacd;
@@ -5,7 +6,7 @@ body{
 }
 
 .logo{
-   padding-left: 4.375em;
+   padding-left: 4.375rem;
    
 }
 
@@ -22,7 +23,7 @@ body{
 
 .menu{
     margin: 0px;
-    padding-right: 4.375em;
+    padding-right: 4.375rem;
     display: flex;
     list-style: none;
     gap: .5rem
@@ -63,6 +64,19 @@ footer{
 
 #btn-menu{
     display: none;
+}
+
+/*Formatação conteúdo*/
+#sobre{
+    width: 3.125rem;
+    height: 43.75rem;
+    padding: 6.25rem;
+    text-align: center;
+}
+
+#foto{
+    width: 3.125rem;
+    height: 43.75rem;
 }
 
 /*Formatação para telas menores*/
