@@ -9,7 +9,11 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" >
     <link rel="stylesheet" href="estilologin.css">
 
-    <link rel="icon" href="Imagens/ARMAZEM BRASIL - LOGOTIPO fundo_Prancheta 1.png" type="image/png">
+    <link rel="icon" href="Imagens/logotipo1.png" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
 
     <title>Armazém Brasil | Login</title>
   </head>
@@ -25,7 +29,7 @@
       <a href="#Login" accesskey="4">Login [5]</a> |
 
     <header class="cabecalho">
-      <a href="home.html" class="logo"><img class="img-fluid" src="Imagens/ARMAZEM BRASIL - LOGOTIPO fundo_Prancheta 1.png" alt="Logo da loja armazem brasil"></a>
+      <a href="home.html" class="logo"><img class="img-fluid" src="Imagens/logotipo1.png" alt="Logo da loja armazem brasil"></a>
       <nav class="container-menu" id="cx-menu">
           <button aria-label="Clique para abrir o menu" id="btn-menu" aria-haspopup="true" aria-controls="#menu" aria-expanded="false"><span class="hamburger"></span></button>
           <ul class="menu" id="menu" role="menu">
@@ -34,13 +38,50 @@
               <li><a id="Contato" href="Contato.html">Contato</a></li>
               <li><a id="Sobre" href="Sobre.html">Sobre</a></li>
               <li><a id="Login" href="Login.html">Login</a></li>
+              <li><a id="Carrinho" href="Carrinho.html">Carrinho</a></li>
           </ul>
       </nav>
   </header>
 
   <!--Conteúdo-->
 
-  <main>
+  <main class="container-fluid">
+    <form class="container-fluid col-md-5 col-12" method="post" name="Login" action="#">
+      <section>
+        <div class="container-fluid">
+          <h4>Já sou cliente</h4>
+          <br>
+            <div class="form-group">
+              <label for="txtlogin">E-mail ou CPF</label>
+              <br>
+              <input type="email"
+                    required
+                    maxlength="80"
+                    placeholder="E-mail/CPF."
+                    id="txtlogin"/>
+            </div>
+            
+            <div class="form-group">
+              <label for="password">Senha</label>
+              <br>
+              <input type="password"
+                    required
+                    placeholder="Informe sua senha."
+                    id="password"/>
+            </div>
+            
+            <div>
+              <input class="btn btn-light" type="submit"
+                      value="Acessar Conta"
+                      id="btnentrar"/>
+            </div>
+            <br>
+            <div>
+              <p>Ainda não possui conta? <a href="Cadastro.html">Cadastre-se</a></p>
+            </div>
+        </div>  
+      </section>
+    </form>
   </main>
 
   <!--Rodapé-->

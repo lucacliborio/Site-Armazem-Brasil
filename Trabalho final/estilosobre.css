@@ -37,20 +37,14 @@ body{
     padding: .5rem;
 }
 
-#carouselExampleFade{
-    width: 90%;
-    margin-top: 2%;
-    margin-left: 5%;
-}
-
 .logosocial{
-    width: 25px;
+    width: 1.563rem;
 }
 
 footer{
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 25px;
+    margin-top: 1.25rem;
+    margin-bottom: 1.563rem;
 }
 
 

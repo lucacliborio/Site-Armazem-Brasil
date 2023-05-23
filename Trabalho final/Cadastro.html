@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" href="estilocadastro.css">
+    
+    <link rel="icon" href="Imagens/logotipo1.png" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+
+
+    <title>Armazém Brasil | Cadastro</title>
+  </head>
+
+  <!--Corpo-->
+
+  <body>
+
+    <a href="#Home" accesskey="1">Home[1]</a> |
+    <a href="#Produtos" accesskey="2">Produtos [2]</a> |
+    <a href="#Contato" accesskey="3">Contato [3]</a> |
+    <a href="#Sobre" accesskey="4">Sobre [4]</a> |
+    <a href="#Login" accesskey="4">Login [5]</a> |
+
+      <header class="cabecalho">
+          <a href="home.html" class="logo"><img class="img-fluid" src="Imagens/logotipo1.png" alt="Logo da loja armazem brasil"></a>
+          <nav class="container-menu" id="cx-menu">
+              <button aria-label="Clique para abrir o menu" id="btn-menu" aria-haspopup="true" aria-controls="#menu" aria-expanded="false"><span class="hamburger"></span></button>
+              <ul class="menu" id="menu" role="menu">
+                  <li><a id="Home" href="home.html" class="item-menu-ativo">Home</a></li>
+                  <li><a id="Produtos" href="Produtos.html">Produtos</a></li>
+                  <li><a id="Contato" href="Contato.html">Contato</a></li>
+                  <li><a id="Sobre" href="Sobre.html">Sobre</a></li>
+                  <li><a id="Login" href="Login.html">Login</a></li>
+                  <li><a id="Carrinho" href="Carrinho.html">Carrinho</a></li>
+              </ul>
+          </nav>
+      </header>
+
+  <!--Conteúdo-->    
+      <main class="container-fluid">
+        <form class="container-fluid col-md-5 col-12" method="post" name="Cadastro" action="#">
+            <section>
+                <div class="container-fluid">
+                    <h3>Quero criar uma conta</h3>
+                    <br>
+
+                    <div class="form-group">
+                        <label for="txtcadastro">E-mail *</label>
+                        <br>
+                        <input type="email"
+                              required
+                              maxlength="80"
+                              placeholder="E-mail."
+                              id="txtcadastro">
+                      </div>
+                      <br>
+
+                    <h5>Dados Pessoais</h5>
+                    <br>
+
+                    <div class="form-group">
+                        <label for="txtcadastro">CPF *</label>
+                        <br>
+                        <input type="number"
+                               required
+                               placeholder="CPF."
+                               id="txtcadastro">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="txtcadastro">Telefone/Celular *</label>
+                        <br>
+                        <input type="tel"
+                               required
+                               maxlength="12"
+                               placeholder="Número de telefone/Celular."
+                               id="txtcadastro">
+                    </div>
+                    <br> 
+
+                    <div class="form-group">
+                        <label>Nome Completo *</label>  
+                        <br>    
+                        <input for="txtcadastro"
+                               type="text"
+                               required
+                               maxlength="50"
+                               placeholder="Nome Completo."
+                               id="txtcadastro">
+                    </div> 
+                    <br>  
+                    
+                    <div class="form-group">
+                        <label>Data de Nascimento *</label>  
+                        <br>    
+                        <input for="txtcadastro"
+                               type="date"
+                               required
+                               maxlength="50"
+                               placeholder=""
+                               id="txtcadastro">
+                    </div> 
+                    <br>
+
+                    <div class="form-group">
+                        <label>Senha (mínimo 6 caracteres) *</label>  
+                        <br>    
+                        <input for="txtcadastro"
+                               type="password"
+                               required
+                               maxlength="100"
+                               placeholder="Senha."
+                               id="txtcadastro">
+                    </div>
+                    <br> 
+
+                    <h5>Endereço de cobrança</h5>
+                    <br>
+
+                    <div class="form-group">
+                        <label for="txtcadastro">CEP *</label>
+                        <br>
+                        <input type="number"
+                               required
+                               maxlength="8"
+                               placeholder="CEP."
+                               id="txtcadastro">
+                    </div>
+                    <br>
+
+                    <h5><strong>Notificações</strong> (opcional)</h5>
+                    <br>
+
+                    <p id="p1">Escolha quais tipos de mensagens do Armazém Brasil você quer
+                       receber. <strong>O contato com você é muito importante para nós.</strong>
+                    </p>            
+
+                    <div class="form-group">
+                        <input type="checkbox"
+                               id="whatsapp"/>
+                        <label for="whatsapp">WhatsApp</label>   
+                        <br>
+                        <input type="checkbox"
+                               id="email"/>
+                        <label for="email">E-mail</label>
+                        <br>
+                        <input type="checkbox"
+                               id="sms"/>
+                        <label for="sms">SMS</label>
+                    </div>
+                    <br>
+                    
+                    <div>
+                        <p id="p2">Verifique todas as informações antes de continuar,
+                           os campos com * são obrigatórios.
+                        </p>
+                    </div>
+                    <br>
+
+                    <div>
+                        <input class="btn btn-light" type="submit"
+                                value="Continuar"
+                                id="btncontinuar"/>
+                      </div>
+                </div>
+            </section>
+        </form>
+      </main>
+
+  <!--Rodapé-->    
+
+      <footer>
+          <a class="link" href="https://api.whatsapp.com/send?phone=5518997715185&text=Ol%C3%A1%20vim%20atrav%C3%A9s%20do%20site,%20tenho%20interesse%20em%20alguns%20dos%20seus%20produtos!%20" target="_blank"><img class="logosocial" src="Imagens/iconewhastapp.png" alt="Logo WhatsApp"></a>
+          <a class="link" href="https://www.facebook.com/profile.php?id=100087968906738" target="_blank"><img class="logosocial" src="Imagens/iconeface.webp" alt="Logo Facebook"></a>
+          <a class="link" href="https://www.instagram.com/armazembrasiltapetes/" target="_blank"><img class="logosocial" src="Imagens/iconeinsta.webp" alt="Logo Instagram"></a>
+          <br>     
+        Copyright 1961-2023 - todos os direitos reservados
+      </footer>
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>  
+    <script src="js/popper.min.js" ></script>
+    <script src="js/bootstrap.min.js" ></script>
+    
+    <script src="js/menu-mobile.js"></script>
+  </body>
+</html>
