@@ -22,11 +22,10 @@
 
   <body>
 
-      <a href="#Home" accesskey="1">Home[1]</a> |
-      <a href="#Produtos" accesskey="2">Produtos [2]</a> |
-      <a href="#Contato" accesskey="3">Contato [3]</a> |
-      <a href="#Sobre" accesskey="4">Sobre [4]</a> |
-      <a href="#Login" accesskey="4">Login [5]</a> |
+    <div class="d-none">
+      <a href="#jasoucliente" accesskey="1">Fazer Login [1]</a> |
+      <a href="#fazercadastro" accesskey="2">Fazer Cadastro [2]</a> |
+    </div>
 
     <header class="cabecalho">
       <a href="home.html" class="logo"><img class="img-fluid" src="Imagens/logotipo1.png" alt="Logo da loja armazem brasil"></a>
@@ -49,35 +48,35 @@
     <form class="container-fluid col-md-5 col-12" method="post" name="Login" action="#">
       <section>
         <div class="container-fluid">
-          <h4>Já sou cliente</h4>
+          <h4 id="jasoucliente">Já sou cliente</h4>
           <br>
             <div class="form-group">
               <label for="txtlogin">E-mail ou CPF</label>
               <br>
               <input type="email"
-                    required
-                    maxlength="80"
-                    placeholder="E-mail/CPF."
-                    id="txtlogin"/>
+                     required
+                     maxlength="80"
+                     placeholder="E-mail/CPF."
+                     id="txtlogin"/>
             </div>
             
             <div class="form-group">
               <label for="password">Senha</label>
               <br>
               <input type="password"
-                    required
-                    placeholder="Informe sua senha."
-                    id="password"/>
+                     required
+                     placeholder="Informe sua senha."
+                     id="password"/>
             </div>
             
             <div>
-              <input class="btn btn-light" type="submit"
-                      value="Acessar Conta"
-                      id="btnentrar"/>
+              <input class="btn btn-secondary" type="submit"
+                     value="Acessar Conta"
+                     id="btnentrar"/>
             </div>
             <br>
-            <div>
-              <p>Ainda não possui conta? <a href="Cadastro.html">Cadastre-se</a></p>
+            <div id="fazercadastro">
+              <p>Ainda não possui conta? <a  href="Cadastro.html">Cadastre-se</a></p>
             </div>
         </div>  
       </section>
@@ -86,14 +85,75 @@
 
   <!--Rodapé-->
 
-  <footer>
-    <a class="link" href="https://api.whatsapp.com/send?phone=5518997715185&text=Ol%C3%A1%20vim%20atrav%C3%A9s%20do%20site,%20tenho%20interesse%20em%20alguns%20dos%20seus%20produtos!%20" target="_blank"><img class="logosocial" src="Imagens/iconewhastapp.png" alt="Logo WhatsApp"></a>
-    <a class="link" href="https://www.facebook.com/profile.php?id=100087968906738" target="_blank"><img class="logosocial" src="Imagens/iconeface.webp" alt="Logo Facebook"></a>
-    <a class="link" href="https://www.instagram.com/armazembrasiltapetes/" target="_blank"><img class="logosocial" src="Imagens/iconeinsta.webp" alt="Logo Instagram"></a>
-    <br>     
-    Copyright 1961-2023 - todos os direitos reservados
-  </footer>
+  <footer class="container-fluid">
+    <div class="footer-top">
+     <div class="container">
+       <div class="row justify-content-between align-items-start">
+         <div class="col-12 col-md-4">
+           <div class="nav-footer">
+             <div class="row justify-content-between align-items-start">
+               <div class="col">
+                 <div class="d-flex flex-columm">  
+                   <div class="col-12">
+                     <a class="logo-link" href="Home.html">
+                       <img src="Imagens/logotipo1.png" alt="logoarmazembrasiltapetes" style="max-height: 120px;">
+                     </a>
+                     <p class="text-center">Sua casa do seu jeito</p>
+                     <div class="nav-social">
+                       <div class="row no-gutters justify-content-center">
+                         <div class="mb-5">
+                           <a class="link" href="https://www.facebook.com/profile.php?id=100087968906738" target="_blank"><img class="logosocial" src="Imagens/iconeface.webp" alt="Logo Facebook"></a>
+                           <a class="link" href="https://www.instagram.com/armazembrasiltapetes/" target="_blank"><img class="logosocial" src="Imagens/iconeinsta.webp" alt="Logo Instagram"></a>
+                         </div>                           
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>                
+             </div>
+           </div>
+         </div>
 
+         <div class="col col-12 col-md-4 mb-4">
+           <div class="mb-4"> 
+             <h2>Institucional</h2>
+           </div>
+           <div class="col-12 mb-4">
+             <a class="link text-center" href="Sobre.html">Sobre nós</a>
+           </div>  
+         </div>
+         
+         <div class="col col-md-4 mb-4">
+               <div class="col-12 mb-4">
+                 <h2>Atendimento</h2>
+               </div>
+               <div class="col-12 mb-4">
+                 <a class="link text-center" href="https://api.whatsapp.com/send?phone=5518997715185&text=Ol%C3%A1%20vim%20atrav%C3%A9s%20do%20site,%20tenho%20interesse%20em%20alguns%20dos%20seus%20produtos!%20" target="_blank"><img class="logosocial" src="Imagens/iconewhastapp.png" alt="Logo WhatsApp">WhatsApp</a>
+               </div>
+               <div class="text-center">
+                 <p>
+                   Rua 9 de Julho, 128, Galeria Bergamini loja 05 - Centro
+                   Martinópolis/SP | CEP: 19500-000
+                 </p>
+               </div>
+         </div>
+       </div>
+     </div>
+    </div>
+
+    <div class="footer-bottom">
+     <div class="container">
+       <div class="row mb-4">
+         <div class="col-12 col-md-4 footer-bottom">
+           <h2 style="font-size: 12px; text-transform: none;">Amazém Brasil Tapetes | Sua casa do seu jeito</h2>
+           <div class="">
+             <p style="font-size: 10px;">Armazém Brasil Tapetes- © Todos os direitos reservados. 2023.</p>
+           </div>
+          </div>
+       </div>
+     </div>
+    </div> 
+   </footer>
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="js/jquery-3.3.1.slim.min.js"></script>

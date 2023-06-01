@@ -1,6 +1,6 @@
 body{
     margin: 0px;
-    background-color: #fffacd;
+    background-color: #ffff;
     font-family: condensed;
 }
 
@@ -11,12 +11,12 @@ body{
 
 .cabecalho{
     box-sizing: border-box;
-    height: 150px;
+    height: 9.375rem;
     display: flex;
     align-items: center;
     padding: 1rem;
     justify-content: space-between; 
-    background-color: #F0E68C;
+    background-color: #ffe4e1;
     
 }
 
@@ -37,9 +37,7 @@ body{
 }
 
 #carouselExampleFade{
-    width: 90%;
     margin-top: 2%;
-    margin-left: 5%;
 }
 
 .logosocial{
@@ -48,8 +46,14 @@ body{
 
 footer{
     text-align: center;
+    box-sizing: border-box;
+    display: block;
     margin-top: 1.25rem;
     margin-bottom: 1.563rem;
+    padding: 30px;
+    height: auto;
+    background-color: #ffe4e1 ;
+    color: #5D2E10;
 }
 
 
@@ -65,6 +69,32 @@ footer{
     display: none;
 }
 
+/*Formatação conteúdo*/
+
+p{
+    color: #5D2E10;
+}
+
+/*Formatação rodapé*/
+h2{
+    font-size: 0.938rem;
+    text-transform: uppercase;
+}
+
+.link:link{
+    text-decoration: none;
+    color: #5D2E10;
+}
+
+.link:hover{
+    text-decoration: underline;
+    color: #5D2E10;
+}
+
+a{
+    color: #5D2E10;
+}
+
 /*Formatação para telas menores*/
 @media (max-width: 600px){
     .menu{
@@ -74,7 +104,7 @@ footer{
         width: 100%;
         top: 9.375rem;
         right: 0px;
-        background-color: #F0E68C;
+        background-color: #ffe4e1;
         height: 0px;
         z-index: 1000;
         transition: .6s;
@@ -99,7 +129,7 @@ footer{
         font-family: Calibri, Arial, Helvetica, sans-serif;
         font-size: 1.5rem;
         border: none;
-        background-color: #F0E68C;
+        background-color: #ffe4e1;
         cursor: pointer;
         gap: .5rem; 
         outline: 0;
