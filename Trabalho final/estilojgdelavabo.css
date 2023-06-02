@@ -76,17 +76,16 @@ main{
     
 }
 
-#img{
-    border-radius: 0.625rem;
-    padding: 1.25rem;
-    
-}
 
 #detalhes{
     text-align: center;
     color: #5D2E10;
     border-radius: 0.625rem;
     margin-top: 9.375rem;
+}
+
+#btncomprar{
+    width: 150px;
 }
 
 

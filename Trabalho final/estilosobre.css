@@ -69,15 +69,17 @@ footer{
 /*Formatação conteúdo*/
 #sobre{
     width: 3.125rem;
-    height: 43.75rem;
+    height: auto;
     padding: 6.25rem;
     text-align: center;
     color: #5D2E10;
 }
 
 #foto{
+    margin-top: 6.25rem;
     width: 3.125rem;
-    height: 43.75rem;
+    height: auto;
+    
 }
 
 /*Formatação rodapé*/
